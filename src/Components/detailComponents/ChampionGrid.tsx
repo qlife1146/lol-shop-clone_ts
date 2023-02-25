@@ -1,11 +1,11 @@
-import championList from "../../data/champion";
+import championList, { Champion } from "../../data/champion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/championGrid.css";
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col } from "react-bootstrap";
 
 export default function ChampionGrid() {
-    const [items] = useState(championList);
+    const [items] = useState<Champion[]>(championList);
     const navigate = useNavigate();
     return (
         <div className="champion-content-area">

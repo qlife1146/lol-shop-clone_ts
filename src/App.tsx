@@ -26,7 +26,8 @@ function App() {
             style={{
                 background: `url(
                   ${process.env.PUBLIC_URL}/images/bg.jpg
-              )`,
+              ) no-repeat center 140px`,
+                backgroundSize: "100% auto",
             }}
         >
             <Header />
